@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F9"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women Safety - Visa Info"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF4081"
+            android:layout_marginTop="16dp" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This app provides quick access to women safety features including:"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textColor="#333" />
+
+        <!-- List of features -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Emergency SOS\n• Trusted Contacts\n• Location Sharing\n• Travel Visa Assistance"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#555" />
+
+        <!-- Visa Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visa Help: Know the rules for traveling safely across countries. Our app helps women understand visa procedures and safety policies while abroad."
+            android:textSize="15sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#333" />
+
+        <!-- Images -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"/>
+
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</ScrollView>

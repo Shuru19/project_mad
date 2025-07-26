@@ -1,37 +1,96 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:padding="24dp">
+    android:orientation="horizontal"
+    android:background="@drawable/bg_pink_left">
 
-    <EditText
-        android:hint="Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <!-- White Card Box -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="675dp"
+        android:layout_weight="25.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="24dp"
+        android:layout_margin="20dp">
 
-    <EditText
-        android:hint="Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
 
-    <EditText
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <!-- Register text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FF4081"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
 
-    <Button
-        android:text="Register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp" />
+        <!-- Name Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginTop="16dp" />
 
-    <TextView
-        android:id="@+id/tvLogin"
-        android:text="Already have an account? Login here"
-        android:textColor="@android:color/holo_blue_dark"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <!-- Email Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="8dp" />
+
+        <!-- Password Field -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:backgroundTint="#FF4081"
+            android:textColor="#FFF"
+            android:layout_marginTop="12dp" />
+
+        <!-- Already have an account? Login -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#FF4081"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- Right Side Spacer or Decoration -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center" />
 </LinearLayout>
